@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: "Mukta", sans-serif;
+}
+
+/* GRID ITEMS */
+
+.item1 {
+    grid-area: header;
+}
+.item2 {
+    grid-area: hero;
+    text-align: center;
+    color: white;
+    margin-top: 250px;
+    padding: 0 150px 2em;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.8) 20%,
+        rgba(0, 0, 0, 0.8) 80%,
+        rgba(0, 0, 0, 0.4) 100%
+    );
+}
+
+.page1 {
+    grid-area: page-1;
+    background-image: url(img/gate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+.page2 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-areas:
+        "page-1"
+        "page-2";
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero";
+}
+
+.nav-container {
+    color: white;
+    background: rgba(0, 0, 0, 0.644);
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    padding-right: 100px;
+    font-size: 18px;
+}
+
+/* Article grid items */
+
+.article-item0 {
+    grid-area: article0;
+}
+.article-item1 {
+    grid-area: article1;
+}
+.article-item2 {
+    grid-area: article2;
+}
+.article-item3 {
+    grid-area: article3;
+}
+.article-item4 {
+    grid-area: article4;
+}
+.article-item5 {
+    grid-area: article5;
+}
+
+.navitem {
+    cursor: pointer;
+}
+
+article {
+    border-radius: 10%;
+    /* background: rgba(0, 0, 0, 0.123); */
+    padding: 1em;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.article-container {
+    display: grid;
+
+    grid-template-areas:
+        "article0 article1 article2"
+        "article3 article4 article5";
+}
+button {
+    color: white;
+    background: #b64931;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2em;
+    border-radius: 50px;
+    border: none;
+}
+
+button:hover {
+    background: #9c5e2f;
+    outline: #1d130a 5px solid;
+    cursor: pointer;
+}
+
+/* TYPOGRAPHY */
+
+h4 {
+    margin: 20px 0;
+}
+
+h1 {
+    line-height: 1;
+    margin: 0;
+    margin-top: 0.5em;
+    font-size: 54px;
+}
+
+p {
+    padding: 0;
+    font-size: 1rem;
+}
+
+/* IMAGES */
+
+.article-image {
+    width: 80%;
+    max-width: 300px;
+}
